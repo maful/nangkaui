@@ -6,3 +6,25 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+/demo/.bundle
+# Ignore all logfiles and tempfiles.
+/demo/log/*
+/demo/tmp/*
+!/demo/log/.keep
+!/demo/tmp/.keep
+# Ignore pidfiles, but keep the directory.
+/demo/tmp/pids/*
+!/demo/tmp/pids/
+!/demo/tmp/pids/.keep
+/demo/public/assets
+# Ignore master key for decrypting credentials and more.
+/demo/config/master.key
+/demo/app/assets/builds/*
+!/demo/app/assets/builds/.keep
+/demo/node_modules
+# MacOS related files
+.DS_Store?
+.DS_store
+.ds_store
+**/.DS_Store
