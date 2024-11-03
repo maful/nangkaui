@@ -5,7 +5,7 @@ require "phlex"
 
 loader = Zeitwerk::Loader.for_gem
 loader.inflector.inflect("nangkaui" => "NangkaUI")
-loader.collapse("#{__dir__}/nangkaui/{button}")
+loader.collapse("#{__dir__}/nangkaui/{button,alert}")
 loader.setup
 
 module NangkaUI

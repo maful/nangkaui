@@ -1,0 +1,10 @@
+<div class="p-2 flex gap-2">
+  <%= render NangkaUI::Alert.new do |c| %>
+    <%= c.with_title { "Heads up!" } %>
+    <%= c.with_description { "You can add components and dependencies to your app using the cli." } %>
+  <% end %>
+  <%= render NangkaUI::Alert.new(variant: :destructive) do |c| %>
+    <%= c.with_title { "Error" } %>
+    <%= c.with_description { "Your session has expired. Please log in again." } %>
+  <% end %>
+</div>
