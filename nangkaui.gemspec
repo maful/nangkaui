@@ -17,5 +17,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir["lib/**/*.rb"]
   spec.require_paths = ["lib"]
 
+  spec.add_dependency("activesupport", [">= 7.2", "< 9.0.0"])
+  spec.add_dependency("phlex", "~> 1.11")
   spec.add_dependency("zeitwerk", "~> 2.7")
 end

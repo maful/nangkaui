@@ -8,3 +8,12 @@ AllCops:
   TargetRubyVersion: 3.2
   Exclude:
     - 'demo/**/*'
+
+Lint/MissingSuper:
+  Enabled: false
+
+Style/ClassMethodsDefinitions:
+  Enabled: false
+
+Layout/LineLength:
+  Enabled: false
