@@ -1,0 +1,18 @@
+<div class="p-2 flex gap-2">
+  <div>
+    <div class="flex items-center space-x-2">
+      <%= render NangkaUI::Card.new do |c| %>
+        <%= c.header do |h| %>
+          <% h.title { "Card Title" } %>
+          <% h.description { "Card Description" } %>
+        <% end %>
+        <%= c.content do %>
+          <p>Card Content</p>
+        <% end %>
+        <%= c.footer do %>
+          <p>Card Footer</p>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
