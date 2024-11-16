@@ -3,6 +3,7 @@
 // ./bin/rails generate stimulus controllerName
 
 import { application } from "./application"
+import { registerControllers } from "stimulus-vite-helpers"
 
-import HelloController from "./hello_controller"
-application.register("hello", HelloController)
+const controllers = import.meta.glob("./**/*_controller.{js,ts}", { eager: true })
+registerControllers(application, controllers)

@@ -4,9 +4,10 @@ module NangkaUI
   class Base < Phlex::HTML
     include StyleVariants
 
-    attr_reader :system_arguments
+    attr_reader :system_arguments, :classes
 
     def initialize(**system_arguments)
+      @classes = system_arguments.delete(:class)
       @system_arguments = system_arguments
     end
 
