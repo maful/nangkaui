@@ -43,3 +43,4 @@ gem "vite_rails", "~> 3.0"
 gem "nangkaui", path: "../"
 
 gem "phlex-rails", "~> 1.1"
+gem 'stringio', '~> 3.1'
