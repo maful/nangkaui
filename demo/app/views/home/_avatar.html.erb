@@ -1,0 +1,6 @@
+<div class="p-2 flex gap-2">
+  <%= render NangkaUI::Avatar.new do |a| %>
+    <% a.image src: "https://google.com", alt: "@maful" %>
+    <% a.fallback { "MA" } %>
+  <% end %>
+</div>
