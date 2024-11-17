@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
-const NAMESPACE="nangkaui";
+const NAMESPACE = "nangkaui";
 
 export default class extends Controller {
   static values = {

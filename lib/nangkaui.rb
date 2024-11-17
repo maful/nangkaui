@@ -6,7 +6,7 @@ require "tailwind_merge"
 
 loader = Zeitwerk::Loader.for_gem
 loader.inflector.inflect("nangkaui" => "NangkaUI")
-loader.collapse("#{__dir__}/nangkaui/{button,alert,badge,label,card,skeleton,tabs}")
+loader.collapse("#{__dir__}/nangkaui/{button,alert,badge,label,card,skeleton,tabs,accordion}")
 loader.setup
 
 module NangkaUI

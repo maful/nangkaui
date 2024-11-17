@@ -1,0 +1,16 @@
+<div class="p-2 flex gap-2">
+  <%= render NangkaUI::Accordion.new class: "w-full" do |a| %>
+    <% a.item(value: "item1") do |i| %>
+      <% i.trigger { "Is it accessible?" } %>
+      <% i.content { "Yes. It adheres to the WAI-ARIA design pattern." } %>
+    <% end %>
+    <% a.item(value: "item2") do |i| %>
+      <% i.trigger { "Is it styled?" } %>
+      <% i.content { "Yes. It comes with default styles that matches the other components' aesthetic." } %>
+    <% end %>
+    <% a.item(value: "item3") do |i| %>
+      <% i.trigger { "Is it animated?" } %>
+      <% i.content { "Yes. It's animated by default, but you can disable it if you prefer." } %>
+    <% end %>
+  <% end %>
+</div>
